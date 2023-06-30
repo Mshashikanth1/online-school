@@ -1,4 +1,4 @@
-<img width="1800" alt="image" src="https://github.com/Mshashikanth1/OnlineSchool-spring-boot-neo4j/assets/57630057/121588e9-c423-4acc-8e91-9e4753196ddd"># simple-social-media-Applicaiton-spring-boot-neo4j
+# simple-social-media-Applicaiton-spring-boot-neo4j
 Demo Project for Learning Neo4j Graph Database and cypher query Langauage
 # To run Project
 ```./mvnw clean install```
@@ -33,4 +33,3 @@ WHERE a.handle = 'ssh3' AND b.handle = 'johndoe123'
 CREATE (b)-[r:sister]->(a)
 RETURN type(r)
 ```
-Screenshot 2023-06-30 at 5.08.35 PM
