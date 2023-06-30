@@ -1,4 +1,4 @@
-# OnlineSchool-spring-boot-neo4j
+# simple-social-media-Applicaiton-spring-boot-neo4j
 Demo Project for Learning Neo4j Graph Database and cypher query Langauage
 # To run Project
 ```./mvnw clean install```
