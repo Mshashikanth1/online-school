@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/courses")
+@RequestMapping("/api/v1/courses/")
 public class CourseController {
     private final CourseService courseService;
 
@@ -21,12 +21,12 @@ public class CourseController {
         this.courseService = courseService;
     }
 
-    @GetMapping("/")
+    @GetMapping()
     public ResponseEntity<List<Course>> getCourses(){
         return new ResponseEntity<>(courseService.getAllCourses(), HttpStatus.OK);
     }
 
-    @PostMapping("/")
+    @PostMapping()
     public Course addCourses(@RequestBody Course course){
         return courseService.addCourses(course);
     }
