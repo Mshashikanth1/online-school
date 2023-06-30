@@ -34,4 +34,9 @@ public class UserController {
     public User addUsers(@RequestBody  User user){
         return userService.addUsers(user);
     }
+
+    @PostMapping("follow")
+    public  User followUser(@RequestParam String handle){
+        return new User();
+    }
 }
